@@ -6,9 +6,15 @@
  */
 
 #include <stdio.h>
-#include "gpio.h"
+#include "taster.h"
+#include "board.h"
 
 int main(void)
 {
+	setup_board();
 
+	while(1)
+	{
+
+	}
 }
