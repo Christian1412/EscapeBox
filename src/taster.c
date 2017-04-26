@@ -8,7 +8,6 @@
 
 #include "taster.h"
 
-
 //setup Pin 22, inout, pull-up-resistor
 static void setup_taster_0()
 {
@@ -136,78 +135,78 @@ void setup_taster()
 	setup_taster_key_right();
 }
 
-inline int read_taster_0()
+inline taster_state_t read_taster_0()
 {
-	return (PINA >> PA0) & 1 ;
+	return (taster_state_t)(PINA >> PA0) & 1 ;
 }
 
-inline int read_taster_1()
+inline taster_state_t read_taster_1()
 {
-	return (PINA >> PA1) & 1 ;
+	return (taster_state_t) (PINA >> PA1) & 1 ;
 }
 
-inline int read_taster_2()
+inline taster_state_t read_taster_2()
 {
-	return (PINA >> PA2) & 1 ;
+	return (taster_state_t) (PINA >> PA2) & 1 ;
 }
 
-inline int read_taster_3()
+inline taster_state_t read_taster_3()
 {
-	return (PINA >> PA3) & 1 ;
+	return (taster_state_t) (PINA >> PA3) & 1 ;
 }
 
-inline int read_taster_4()
+inline taster_state_t read_taster_4()
 {
-	return (PINA >> PA4) & 1 ;
+	return (taster_state_t) (PINA >> PA4) & 1 ;
 }
 
-inline int read_taster_5()
+inline taster_state_t read_taster_5()
 {
-	return (PINA >> PA5) & 1 ;
+	return (taster_state_t) (PINA >> PA5) & 1 ;
 }
 
-inline int read_taster_6()
+inline taster_state_t read_taster_6()
 {
-	return (PINA >> PA6) & 1 ;
+	return (taster_state_t) (PINA >> PA6) & 1 ;
 }
 
-inline int read_taster_7()
+inline taster_state_t read_taster_7()
 {
-	return (PINA >> PA7) & 1 ;
+	return (taster_state_t) (PINA >> PA7) & 1 ;
 }
 
-inline int read_taster_8()
+inline taster_state_t read_taster_8()
 {
-	return (PINC >> PC7) & 1 ;
+	return (taster_state_t) (PINC >> PC7) & 1 ;
 }
 
-inline int read_taster_9()
+inline taster_state_t read_taster_9()
 {
-	return (PINC >> PC6) & 1 ;
+	return (taster_state_t) (PINC >> PC6) & 1 ;
 }
 
-inline int read_taster_10()
+inline taster_state_t read_taster_10()
 {
-	return (PINC >> PC5) & 1 ;
+	return (taster_state_t) (PINC >> PC5) & 1 ;
 }
 
-inline int read_taster_11()
+inline taster_state_t read_taster_11()
 {
-	return (PINC >> PC4) & 1 ;
+	return (taster_state_t) (PINC >> PC4) & 1 ;
 }
 
-inline int read_taster_bonus()
+inline taster_state_t read_taster_bonus()
 {
-	return (PING >> PG5) & 1 ;
+	return (taster_state_t) (PING >> PG5) & 1 ;
 }
 
-inline int read_taster_key_left()
+inline taster_state_t read_taster_key_left()
 {
-	return (PING >> PL6) & 1 ;
+	return (taster_state_t) (PING >> PL6) & 1 ;
 }
 
-inline int read_taster_key_right()
+inline taster_state_t read_taster_key_right()
 {
-	return (PING >> PL5) & 1 ;
+	return (taster_state_t) (PING >> PL5) & 1 ;
 }
 

@@ -10,22 +10,25 @@
 
 #include "gpio.h"
 
+typedef gpio_state_t taster_state_t;
+typedef uint16_t taster_states_t;
+
 void setup_taster();
 
-inline int read_taster_0();
-inline int read_taster_1();
-inline int read_taster_2();
-inline int read_taster_3();
-inline int read_taster_4();
-inline int read_taster_5();
-inline int read_taster_6();
-inline int read_taster_7();
-inline int read_taster_8();
-inline int read_taster_9();
-inline int read_taster_10();
-inline int read_taster_11();
-inline int read_taster_bonus();
-inline int read_taster_key_left();
-inline int read_taster_key_right();
+inline taster_state_t read_taster_0();
+inline taster_state_t read_taster_1();
+inline taster_state_t read_taster_2();
+inline taster_state_t read_taster_3();
+inline taster_state_t read_taster_4();
+inline taster_state_t read_taster_5();
+inline taster_state_t read_taster_6();
+inline taster_state_t read_taster_7();
+inline taster_state_t read_taster_8();
+inline taster_state_t read_taster_9();
+inline taster_state_t read_taster_10();
+inline taster_state_t read_taster_11();
+inline taster_state_t read_taster_bonus();
+inline taster_state_t read_taster_key_left();
+inline taster_state_t read_taster_key_right();
 
 #endif /* INCLUDE_TASTER_H_ */
