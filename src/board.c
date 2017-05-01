@@ -11,4 +11,5 @@
 void setup_board()
 {
 	setup_taster();
+	setup_led0();
 }

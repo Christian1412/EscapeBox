@@ -9,6 +9,7 @@
 #define INCLUDE_BOARD_H_
 
 #include "taster.h"
+#include "led.h"
 
 void setup_board();
 

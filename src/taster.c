@@ -92,11 +92,11 @@ static void setup_taster_11()
 	PORTC |= (1 << PC4);
 }
 
-//setup Pin 4, inout, pull-up-resistor
+//setup Pin 21, inout, pull-up-resistor
 static void setup_taster_bonus()
 {
-	DDRG &= ~(1 << PG5);
-	PORTG |= (1 << PG5);
+	DDRD &= ~(1 << PD2);
+	PORTD |= (1 << PD2);
 }
 
 //setup Pin 43, inout, pull-up-resistor
